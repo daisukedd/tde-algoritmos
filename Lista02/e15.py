@@ -1,19 +1,19 @@
-numero = int(input("Informe um número entre 1 e 7: "))
+print("===! Descubra o dia da semana !===")
 
-match numero:
-    case 1:
-        print("Domingo")
-    case 2:
-        print("Segunda-feira")
-    case 3:
-        print("Terça-feira")
-    case 4:
-        print("Quarta-feira")
-    case 5:
-        print("Quinta-feira")
-    case 6:
-        print("Sexta-feira")
-    case 7:
-        print("Sábado")
-    case _:
-        print("Número inválido. Informe um número entre 1 e 7.")
+numero = int(input("Informe um número inteiro entre 1 e 7: "))
+
+# Cada dia da semana corresponde a um número
+dias = [
+    "Domingo",
+    "Segunda-feira",
+    "Terça-feira",
+    "Quarta-feira",
+    "Quinta-feira",
+    "Sexta-feira",
+    "Sábado",
+]
+
+if 1 <= numero <= 7:
+    print(f"O dia da semana correspondente ao número {numero} é: {dias[numero - 1]}")
+else:
+    print("Oops! Número inválido. Por favor, informe um número entre 1 e 7.")

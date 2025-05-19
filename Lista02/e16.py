@@ -1,29 +1,23 @@
-mes = int(input("Informe um mes entre 1 e 12: "))
+print("📅 Vamos descobrir o mês correspondente ao número digitado! 🎉")
 
-match mes:
-    case 1:
-        print("Janeiro")
-    case 2:
-        print("Fevereiro")
-    case 3:
-        print("Março")
-    case 4:
-        print("Abril")
-    case 5:
-        print("Maio")
-    case 6:
-        print("Junho")
-    case 7:
-        print("Julho")
-    case 8:
-        print("Agosto")
-    case 9:
-        print("Setembro")
-    case 10:
-        print("Outubro")
-    case 11:
-        print("Novembro")
-    case 12:
-        print("Dezembro")
-    case _:
-        print("Mes inválido. Informe um mes entre 1 e 12.")
+mes = int(input("Digite um número entre 1 e 12 para o mês: "))
+
+meses = [
+    "Janeiro ❄️",
+    "Fevereiro 💖",
+    "Março 🍀",
+    "Abril 🌧️",
+    "Maio 🌸",
+    "Junho ☀️",
+    "Julho 🎆",
+    "Agosto 🏖️",
+    "Setembro 🍂",
+    "Outubro 🎃",
+    "Novembro 🍁",
+    "Dezembro 🎄",
+]
+
+if 1 <= mes <= 12:
+    print(f"O mês número {mes} é {meses[mes - 1]}!")
+else:
+    print("⚠️ Mês inválido! Por favor, informe um número entre 1 e 12. 😉")
